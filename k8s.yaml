@@ -15,7 +15,7 @@ spec:
         spec:
           containers:
           - name: grpcgoonch-headless-long-client-pickfirst
-            image: thaigoonch/grpcgoonch-headless-long-client-pickfirst:1.0
+            image: thaigoonch/grpcgoonch-headless-long-client-pickfirst:1.1
             imagePullPolicy: IfNotPresent
           restartPolicy: Never
           nodeSelector:
