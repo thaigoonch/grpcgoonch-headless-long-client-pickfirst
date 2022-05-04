@@ -38,7 +38,7 @@ func main() {
 		}
 	}()
 
-	host := "grpcgoonch-service"
+	host := "grpcgoonch-headless-service"
 	opts := []grpc.DialOption{
 		grpc.WithDefaultServiceConfig(`{"loadBalancingConfig": [{"pick_first":{}}]}`),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
