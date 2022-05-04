@@ -1,1 +1,1 @@
-# grpcgoonchclient-pickfirst-long
+# grpcgoonch-headless-long-client-pickfirst
