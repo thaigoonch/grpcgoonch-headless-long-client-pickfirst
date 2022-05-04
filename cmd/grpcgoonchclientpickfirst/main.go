@@ -18,7 +18,7 @@ import (
 
 var (
 	port     = 9000
-	promPort = 9095
+	promPort = 9097
 )
 
 func main() {
