@@ -8,7 +8,7 @@ import (
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	grpcgoonch "github.com/thaigoonch/grpcgoonch-headless/service"
+	grpcgoonch "github.com/thaigoonch/grpcgoonch-headless-long/service"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
@@ -38,7 +38,7 @@ func main() {
 		}
 	}()
 
-	host := "grpcgoonch-headless-service"
+	host := "grpcgoonch-headless-long-service"
 	opts := []grpc.DialOption{
 		grpc.WithDefaultServiceConfig(`{"loadBalancingConfig": [{"pick_first":{}}]}`),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
